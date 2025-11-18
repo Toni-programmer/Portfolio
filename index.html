@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/> <!--link para los iconos de fontawesome-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Portfolio</title>
+  </head>  
+  <body class="dark" > <!--clase por defecto en modo oscuro-->
+    <header class="header">
+        <div class= "switches"> <!--se crea un contenedor para los botones de claro y oscuro-->
+            <div id= "toggle-theme"  class="toggle-theme">  <!--se mete todo dentro de un div para un mejejor responsive-->
+            <img 
+            id= "toggle-icon"
+            src="assets/icons/moon.svg"             
+            alt="icon theme"
+            class="toggle-theme__icon"/>  <!--es el icono de la luna-->
+             
+            <p id="toggle-text" class="toggle-theme__text">Dark Mode</p> <!--es el texto que indica el modo oscuro--> 
+        </div>
+        </div>
+        <div id= "toggle-colors" class= "colors">
+
+            <div data-color= "hsl(214, 84%, 56%)"class="colors__item colors__item--blue"></div>  <!--cada div es un color diferente-->
+            
+            <div data-color="hsl(150, 84%, 56%)" class="colors__item colors__item--green"></div>
+            
+            <div data-color="hsl(276, 84%, 56%)" class="colors__item colors__item--purple"></div>
+            
+            <div data-color="hsl(46, 84%, 56%)" class="colors__item colors__item--orange"></div>
+        </div>
+    </header>
+    <main class="main"> <!--aqui vamos crear todo el contenido de nuestro portfolio-->
+       <section class="column column--left"> <!--aqui es donde vamos crear seccion de la columna izquierda-->
+                  <!--PROFILE CARD-->
+      <article class="card card--profile">  <!--aqui es donde asignaremos cada tarjeta(Ejemplo: presentacion, proyrctos, hobies.)-->
+       <div class="card__image-container">
+        <img
+        src="assets/images/Foto__toni.png"       
+        alt="Foto de perfil"  />  
+
+       </div>
+       <div class="class__header">        <!--aqui va el nombre y la profesion-->
+        <h2 class="card__title">Antonio Sánchez Rincón</h2>
+        <p class="card__subtitle">Web Developer</p>    <!--aqui va la profesion-->
+       </div>
+        <div class="card__body">        <!--aqui va la descripcion-->
+          <div class="card__link">
+            <i class="fas fa-envelope icon"></i> <!--icono de sobre-->
+            <a href="mailto:tonis184@hotmail.com">tonis184@hotmail.com</a>
+          </div>
+          <div class="card__link">
+            <i class="fas fa-phone-alt icon"></i> <!--icono de telefono-->
+            <a href="tel:662218897">(+34)662218897</a>
+          </div>
+
+            <p class="card__text">
+              Soy una persona aventurera y creativa, apasionada por la tecnología y el desarrollo web.
+             Me encanta aprender nuevas habilidades y enfrentar desafíos que me permitan crecer tanto personal
+             como profesionalmente. <br />
+              En mi tiempo libre, disfruto de mi familia, viajar y explorar nuevas culturas. Además, me gusta la 
+              naturaleza y practicar deportes al aire libre.
+            </p>
+
+          </div>
+      </article>
+       <article class="card card--hobbies">
+        <h2 class= "card__title">Hobbies</h2>
+        <div class="card__image-container">
+          <img 
+          src="assets/images/Photo Monte Perdido.jpg"          
+          alt="Alpinism Monte Perdido (Pirineos)"  />
+        </div>
+        <h3 class="hobie__title">Alpinism</h3>
+        <p class="card__text">
+          Me encanta escalar montañas y disfrutar de la naturaleza en su máxima expresión. 
+          El alpinismo me permite desconectar del mundo y conectar conmigo mismo.
+        </p>
+       </article>
+    </section>
+       <section class="column column--right"> <!--aqui es donde vamos crear seccion de la columna derecha-->
+          <!--PROJECT CARD-->
+          <article class="card"> 
+            <h2 class="card_title"> Web Developer (mode learning)</h2>                         
+            <div class="skills">
+        <span>HTML</span>
+      <div class="skill__bar">
+        <div class="fill" style="width: 60%;"></div></div>
+    </div>
+    <div class="skill">
+      <span>CSS</span>
+      <div class="skill__bar"><div class="fill" style="width: 50%;"></div></div>
+    </div>
+    <div class="skill">
+      <span>JAVASCRIPT</span>
+      <div class="skill__bar"><div class="fill" style="width: 40%;"></div></div>
+            </div>
+          </article>
+          <!--PROJECT CARD-->
+          <article class="card"> 
+            <h2 class="card_title"> Soft Skills</h2>
+            <div class="skills">
+        <span>COMUNICACIÓN</span>
+      <div class="skill__bar">
+        <div class="fill" style="width: 80%;"></div></div>
+    </div>
+    <div class="skill">
+      <span>TRABAJO EN EQUIPO</span>
+      <div class="skill__bar"><div class="fill" style="width: 90%;"></div></div>
+    </div>
+    <div class="skill">
+      <span>CAPACIDAD DE APRENDIZAJE</span>
+      <div class="skill__bar"><div class="fill" style="width: 100%;"></div></div>
+            </div>
+          </article>
+          <!--PROJECT CARD-->
+      <article class="card"> 
+            <h2 class="card_title"> Herramientas</h2>
+            <div class="skills">
+        <span>VISUAL STUDIO CODE</span>
+      <div class="skill__bar">
+        <div class="fill" style="width: 60%;"></div></div>
+    </div>
+    <div class="skill">
+      <span>CANVA</span>
+      <div class="skill__bar"><div class="fill" style="width: 50%;"></div></div>
+    </div>
+    <div class="skill">
+      <span>PHOTOSHOP</span>
+      <div class="skill__bar"><div class="fill" style="width: 40%;"></div></div>
+            </div>
+          </article>
+        <article class="card card--project"> <!--aqui es donde se van a poner los proyectos-->
+        <div class="card__image-container">
+          <img src="assets/images/project.jpg" alt="portfolio project" class="card_image" />
+        </div>
+        <!--PRIMER PROYECTO-->
+        <div class="project">
+          <div class="project__tags"><!--aqui van las etiquetas de los proyectos-->
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#JavaScript</span>
+            <span class="project__tag">#Responsive</span>
+          </div>
+          <h2 class="card__title">Portfolio project</h2>
+          <p class="card__text">
+            Este es mi proyecto de portfolio personal, donde muestro mis habilidades y proyectos realizados.
+            Intento que sea responsive y atractivo visualmente. A medida que vaya aprendiendo nuevas habilidades,
+            iré actualizando mi portfolio con nuevos proyectos.
+          </p>
+          <div class="buttons"> <!--aqui van los botones de demo y codigo-->
+            <a href="#" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">Code</a>
+          </div>
+        </div>
+        </article>
+        <article class="card card--project"> <!--aqui es donde se van a poner los proyectos-->
+        <div class="card__image-container">
+          <img src="assets/images/project.jpg" alt="portfolio project" class="card_image" />
+        </div>
+        <!--SEGUNDO PROYECTO-->
+        <div class="project">
+          <div class="project__tags"><!--aqui van las etiquetas de los proyectos-->
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#JavaScript</span>
+            <span class="project__tag">#Responsive</span>
+          </div>
+          <h2 class="card__title">Portfolio project</h2>
+          <p class="card__text">
+            Este es mi proyecto de portfolio personal, donde muestro mis habilidades y proyectos realizados.
+            Intento que sea responsive y atractivo visualmente. A medida que vaya aprendiendo nuevas habilidades,
+            iré actualizando mi portfolio con nuevos proyectos.
+          </p>
+          <div class="buttons"> <!--aqui van los botones de demo y codigo-->
+            <a href="#" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">Code</a>
+          </div>
+        </div>
+        </article>
+        <article class="card card--project"> <!--aqui es donde se van a poner los proyectos-->
+        <div class="card__image-container">
+          <img src="assets/images/project.jpg" alt="portfolio project" class="card_image" />
+        </div>
+        <!--TERCER PROYECTO-->
+        <div class="project">
+          <div class="project__tags"><!--aqui van las etiquetas de los proyectos-->
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#JavaScript</span>
+            <span class="project__tag">#Responsive</span>
+          </div>
+          <h2 class="card__title">Portfolio project</h2>
+          <p class="card__text">
+            Este es mi proyecto de portfolio personal, donde muestro mis habilidades y proyectos realizados.
+            Intento que sea responsive y atractivo visualmente. A medida que vaya aprendiendo nuevas habilidades,
+            iré actualizando mi portfolio con nuevos proyectos.
+          </p>
+          <div class="buttons"> <!--aqui van los botones de demo y codigo-->
+            <a href="#" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">Code</a>
+          </div>
+        </div>
+        </article>
+        </section>
+
+    </main>
+
+    <script src="js/scripts.js"></script>
+    </body> 
+    
+    <footer>
+    <footer class="footer">
+      <p class="footer__text">"Vive como si fueras a morir mañana. Aprende como si fueras a vivir siempre"(Gandhi)</p>
+      <p class="footer__text1">© 2025 Antonio Sánchez Rincón. All rights reserved.</p>
+    </footer>
+  </footer>
+</html>
+
