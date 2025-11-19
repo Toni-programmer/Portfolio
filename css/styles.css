@@ -228,8 +228,9 @@ body.dark{
     
 .project{
     margin-left: 2em;
-    
-
+    overflow: hidden;
+    max-width: 100%;
+    display: grid;
 }}
 
 
@@ -238,7 +239,9 @@ body.dark{
     justify-content: space-between;
     margin: 0.5em 0;
     font-size: 1em;
-    width: 275px;
+    max-width: 100%;
+    
+    
 }
 
 @media screen and (min-width: 720px){
@@ -253,6 +256,7 @@ body.dark{
     padding: 0.4em 3em;
     border-radius: var(--border-radius);    
     color: var(--bg-color);
+    
     
 }
 
