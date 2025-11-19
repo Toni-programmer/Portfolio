@@ -176,7 +176,7 @@ body.dark{
     line-height: 1.7;
 }
 
-@media screen and (min-width: 720px){
+@media screen and (min-width: 760px){
     .card--profile{
         grid-column: 1 / 2;
         grid-row: span 2;    
@@ -195,6 +195,11 @@ body.dark{
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
+
+@media screen and (min-width: 720px){    
+.skills-section {
+    padding: 2em;
+}}
 
 .skills-container {
   max-width: 600px;
@@ -223,7 +228,7 @@ body.dark{
     
 .project{
     margin-left: 2em;
-    position: relative;
+    
 
 }}
 
@@ -231,10 +236,18 @@ body.dark{
 .project__tags{
     display: flex;
     justify-content: space-between;
-    margin: 2em 2em 1em 0;
+    margin: 0.5em 0;
     font-size: 1em;
     width: 275px;
 }
+
+@media screen and (min-width: 720px){
+    .project__tags{
+        width: 352px;
+        font-size: 0.8rem;
+
+    }}
+
 .project__tag{
     background-color: var(--primary-color);
     padding: 0.4em 3em;
